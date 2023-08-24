@@ -1,42 +1,40 @@
 ### Fork From https://github.com/litespeedtech/lsws-magento-docker-env And Fix bugs
 
-# LiteSpeed WordPress Docker Container
+# LiteSpeed Magento / WordPress Docker Container
 
-Install a Magento2.4 container with LiteSpeed stable version based on Ubuntu 22.04 Linux.
+使用容器部署一个运行在LiteSpeed Enterprise 上的 Magneto2 站点，基础镜像为Ubuntu 22.04
 
-### Prerequisites
-1. [Install Docker](https://www.docker.com/)
-2. [Install Docker Compose](https://docs.docker.com/compose/)
+### 运行条件
+1. 最低2核心4G内存，生产环境推荐4核心16G内存
+2. [安装 Docker](https://www.docker.com/)
 
-## Configuration
-Edit the `.env` file to update the demo site domain, default MySQL user, and password.
-Feel free to check [Docker hub Tag page](https://hub.docker.com/repository/docker/litespeedtech/litespeed/tags) if you want to update default litespeed and php versions. 
+## 配置文件
+编辑 `.env` 更改 Demo 站点的域名、数据库。
+查看 [Docker hub Tag page](https://hub.docker.com/repository/docker/litespeedtech/litespeed/tags) 以使用指定的LiteSpedd和PHP版本。
 
-## Installation
-Clone this repository or copy the files from this repository into a new folder:
+## 安装
+克隆此Repo，或者现在源码到一个空目录:
 ```
-git clone https://github.com/litespeedtech/lsws-magento-docker-env.git
+git clone https://github.com/picassochan/magento2-lsws.git
 ```
-Open a terminal, `cd` to the folder in which `docker-compose.yml` is saved, and run:
+打开终端, `cd` 切换至含有 `docker-compose.yml` 的目录，并运行:
 ```
-docker compose up
+docker compose up -d
 ```
 
-Note: If you wish to run a single web server container, please see the [usage method here](https://github.com/litespeedtech/lsws-dockerfiles#usage).
-
-
-## Components
-The docker image installs the following packages on your system:
+## 组件
+此Docker镜像将安装以下组件:
 
 |Component|Version|
 | :-------------: | :-------------: |
-|Linux|Ubuntu 22.04|
+|Base System|Ubuntu 22.04|
 |LiteSpeed|[Latest version](https://www.litespeedtech.com/products/litespeed-web-server/download)|
 |MariaDB|[Stable version: 10.4](https://hub.docker.com/_/mariadb)|
 |PHP|[Latest version](http://rpms.litespeedtech.com/debian/)|
-|LiteSpeed Cache|[Latest from WordPress.org](https://wordpress.org/plugins/litespeed-cache/)|
+|LiteSpeed Cache for Wordpress|[Latest from WordPress.org](https://wordpress.org/plugins/litespeed-cache/)|
+|LiteMage Cache for Magento2|[LiteMage from LiteSpeedtech.com](https://www.litespeedtech.com/products/cache-plugins/magento-acceleration)|
 |ACME|[Latest from ACME official](https://github.com/acmesh-official/get.acme.sh)|
-|Magento2|[2.4.5](https://devdocs.magento.com/guides/v2.4/release-notes/open-source-2-4-2.html)|
+|Magento2|[2.4.2](https://devdocs.magento.com/guides/v2.4/release-notes/open-source-2-4-2.html)|
 |elasticsearch-kibana|[7.17.9]([https://hub.docker.com/_/elasticsearch](https://hub.docker.com/r/nshou/elasticsearch-kibana/))|
 |WordPress|[Latest from WordPress](https://wordpress.org/download/)|
 |phpMyAdmin|[Latest from dockerhub](https://hub.docker.com/r/bitnami/phpmyadmin/)|
