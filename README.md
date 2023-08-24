@@ -1,10 +1,6 @@
-## Fork From https://github.com/litespeedtech/lsws-magento-docker-env And Fix bugs
+### Fork From https://github.com/litespeedtech/lsws-magento-docker-env And Fix bugs
 
 # LiteSpeed WordPress Docker Container
-[![Build Status](https://github.com/litespeedtech/lsws-magento-docker-env/workflows/docker-build/badge.svg)](https://github.com/litespeedtech/lsws-magento-docker-env/actions/)
-[![docker pulls](https://img.shields.io/docker/pulls/litespeedtech/litespeed?style=flat&color=blue)](https://hub.docker.com/r/litespeedtech/litespeed)
-[<img src="https://img.shields.io/badge/slack-LiteSpeed-blue.svg?logo=slack">](litespeedtech.com/slack) 
-[<img src="https://img.shields.io/twitter/follow/litespeedtech.svg?label=Follow&style=social">](https://twitter.com/litespeedtech)
 
 Install a Magento2.4 container with LiteSpeed stable version based on Ubuntu 22.04 Linux.
 
