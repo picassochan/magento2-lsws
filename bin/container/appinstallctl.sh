@@ -717,7 +717,7 @@ install_magento(){
 			--db-user=${SQL_USER} \
 			--db-password=${SQL_PASS} \
 			--db-host=${DB_HOST} \
-			--base-url=http://{DOMAIN} \
+			--base-url=http://${DOMAIN} \
 			--admin-user=${APP_ACCT} \
 			--admin-password=${APP_PASS} \
 			--admin-email=${EMAIL} \
