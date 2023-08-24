@@ -37,7 +37,7 @@ The docker image installs the following packages on your system:
 |LiteSpeed Cache|[Latest from WordPress.org](https://wordpress.org/plugins/litespeed-cache/)|
 |ACME|[Latest from ACME official](https://github.com/acmesh-official/get.acme.sh)|
 |Magento2|[2.4.5](https://devdocs.magento.com/guides/v2.4/release-notes/open-source-2-4-2.html)|
-|elasticsearch|[8.4.2](https://hub.docker.com/_/elasticsearch)|
+|elasticsearch-kibana|[7.17.9]([https://hub.docker.com/_/elasticsearch](https://hub.docker.com/r/nshou/elasticsearch-kibana/))|
 |WordPress|[Latest from WordPress](https://wordpress.org/download/)|
 |phpMyAdmin|[Latest from dockerhub](https://hub.docker.com/r/bitnami/phpmyadmin/)|
 
@@ -218,8 +218,6 @@ docker compose up --build
 
 ## Support & Feedback
 If you still have a question after using LiteSpeed Docker, you have a few options.
-* Join [the GoLiteSpeed Slack community](litespeedtech.com/slack) for real-time discussion
-* Post to [the LiteSpeed Forums](https://www.litespeedtech.com/support/forum/) for community support
-* Reporting any issue on [Github lsws-docker-env](https://github.com/litespeedtech/lsws-docker-env/issues) project
+* Join [MagentoChina.org](https://forum.magentochina.org) for real-time discussion
 
 **Pull requests are always welcome**
